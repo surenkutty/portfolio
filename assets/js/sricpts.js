@@ -80,11 +80,12 @@ const srleft = ScrollReveal({
 srleft.reveal('.about-image-container',{delay:400})
 srleft.reveal('.s2-title',{})
 srleft.reveal('.card',{delay:100})
-
+srleft.reveal('.progress',{delay:100})
 const srright = ScrollReveal({
   origin: 'right',
   distance: '80px',
   duration: 2000,
+  easing:'ease-out',
   reset: false    
 })
 srright.reveal('.info',{})

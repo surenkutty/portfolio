@@ -528,7 +528,11 @@ nav{
     background-color: white;
     text-align: center;
 }
-
+i{ color: #09101A;
+    align-items: center;
+    height: 40px;
+    width: auto;
+}
 .icon {
     font-size: 2rem;
     margin-bottom: 10px;
