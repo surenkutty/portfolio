@@ -1,0 +1,11 @@
+background-image: url(https://zyan.vercel.app/images/bg/subscribe.jpg); */
+    /* background-position-x: center; */
+    /* background-position-y: 112.866px; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-origin: initial; */
+    /* background-clip: initial; */
+    /* background-color: initial;
+
+    

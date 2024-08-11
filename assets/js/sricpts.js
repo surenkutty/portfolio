@@ -1,3 +1,15 @@
+window.addEventListener('load', function() {
+  const progressBars = document.querySelectorAll('.progress');
+  progressBars.forEach(progressBar => {
+      const width = progressBar.style.width;
+      progressBar.style.width = 0;
+      setTimeout(() => {
+          progressBar.style.width = width;
+      }, 500);
+  });
+});
+
+
 const createOdometer=(el,value)=>{
   const odometer=new Odometer({
     el:el,
@@ -61,8 +73,26 @@ const srleft = ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
-  reset: true     
+  
+  reset: false    
 })
 
+srleft.reveal('.about-image-container',{delay:400})
 srleft.reveal('.s2-title',{})
 srleft.reveal('.card',{delay:100})
+
+const srright = ScrollReveal({
+  origin: 'right',
+  distance: '80px',
+  duration: 2000,
+  reset: false    
+})
+srright.reveal('.info',{})
+srright.reveal('.about-content',{delay:200})
+const srbottom = ScrollReveal({
+  origin: 'bottom',
+  distance: '80px',
+  duration: 2000,
+  reset: false    
+})
+srbottom.reveal('.contact-form',{delay:400})
