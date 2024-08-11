@@ -1,3 +1,17 @@
+const createOdometer=(el,value)=>{
+  const odometer=new Odometer({
+    el:el,
+    value:0,
+    });
+    odometer.update(value)
+}
+const counter=document.querySelector(".scroll-count");
+createOdometer(counter,100)
+
+
+
+
+
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
     if(menuBtn.className === "nav-menu"){
