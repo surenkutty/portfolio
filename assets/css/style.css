@@ -7,7 +7,7 @@ body{
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins',sans-serif;
 }
 html{
@@ -577,7 +577,7 @@ i{ color: #09101A;
     /* font-size: 10px; */
     margin-left: 70px;
     margin-bottom: 10px;
-    padding:30px;
+    padding:5px;
     border: 1px solid aqua;
     /* border: none; */
     /* border-radius: 5px; */
@@ -717,17 +717,68 @@ i{ color: #09101A;
 
 /* Subscribe */
 .subscribe{
-    background-image: url('assets/images/subscribe.jpg'); /* Ensure this path is correct */
+    background-image: url('https://zyan.vercel.app/images/bg/subscribe.jpg'); /* Ensure this path is correct */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: white;
-    height: 60vh;
-    padding: 20px;
+    
+    height: 50vh;
+    /* padding: 20px; */
     color: white;
+    background-attachment: fixed;
 }
+.subscribe-overley{
+    height: 50vh;
+    background: #000000e3;
+    /* background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial; */
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.subscribe-form{
+    padding: 30px;
+    text-align: center;
+    /* margin-left: 500px; */
+}
+.s-input{
+        border: 1px solid #55E6A5;
+        padding: 22px 60px;
+        color: white;
+        font-size: 16px;
+        
+        /* font-weight: 500; */
+        background: #131313;
 
-
+}
+.subscribe-form button{
+    position:relative;
+    top:3px;
+    right: 120px;
+    cursor: pointer;
+}
+.subscribe-btn{
+    display: inline-flex;
+    padding: 10px ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00bfa6;
+    color: black;
+    font-weight: 500;
+    transition: all 0.3s linear 0s;
+    border: none;
+}
+.sbox-h{ 
+    text-transform: uppercase;
+   /* margin-top: 50px; */
+   padding-top: 50px;
+    text-align: center;
+}
 /* footer */
 
 
