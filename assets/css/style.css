@@ -284,7 +284,9 @@ nav{
 }
 .services{
     /* background-color: wheat; */
-    margin-top: 40px;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 50px;
 }
 /* card */
 .card-container {
@@ -493,11 +495,15 @@ nav{
     margin: 0;
 }
   /* design inovetion */
+  .design-container{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   
   .info, .contact-form {
     flex: 1 1 45%;
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     /* background-color: #222; */
     border-radius: 10px;
 }
@@ -553,24 +559,29 @@ i{ color: #09101A;
 
 .contact-form form {
 
-    background-color: #09101A;
+    /* background-color: #09101A; */
     display: flex;
     flex-direction: column;
 }
 .contact-form{
-    padding: 40px;
+    background-color: #00997f;
+    /* height: 400px; */
+    /* width: 400px; */
+    margin-top: 80px;
+    /* padding: 40px; */
     align-items: center;
-    background-color: #09101A
+    /* background-color: #09101A */
 }
 
 .contact-form input, .contact-form textarea {
+    /* font-size: 10px; */
     margin-left: 70px;
     margin-bottom: 10px;
     padding:30px;
     border: 1px solid aqua;
     /* border: none; */
     /* border-radius: 5px; */
-    width: 400px;
+    width: 350px;
     height: 50px;
 }
 /* input{
@@ -579,8 +590,8 @@ i{ color: #09101A;
 
 .contact-form button {
     margin-left: 70px;
-    height: 50px;
-    width: 400px;
+    height: 40px;
+    width: 350px;
     padding: 10px;
     background-color: #00bfa6;
     border: none;
@@ -594,11 +605,12 @@ i{ color: #09101A;
 }
 .design-container{
     margin-top: 200px;
+    margin-right: 100px;
     /* margin-left: 100px; */
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around;
-    width: 100%;
+    justify-content:space-around;
+    /* width: 100%; */
     
 
 }
@@ -607,9 +619,10 @@ i{ color: #09101A;
 .education-skill {
     /* background-color: #09101A; */
     text-align: center;
-    padding: 50px 20px;
-    max-width: 1200px;
-    width: 100%;
+    /* padding: 50px 20px; */
+    /* max-width: 1200px; */
+    /* width: 100%; */
+    margin: 100px;
 }
 
 .education-skill h1 {
@@ -625,20 +638,21 @@ i{ color: #09101A;
 
 .grid-container {
    
-    
+    /* background-color: #00bfa6; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
     margin-bottom: 90px;
 }
 
 .grid-item {
     /* border: 0.5px solid black; */
     /* background-color: white; */
-    width: 660px;
-    height: 150px;
+    width: 500px;
+    height: 200px;
     /* background-color: #222; */
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     border-radius: 10px;
     position: relative;
 }
@@ -669,9 +683,9 @@ i{ color: #09101A;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    width: 70%;
+    /* width: 70%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .skill {
@@ -702,27 +716,20 @@ i{ color: #09101A;
 }
 
 /* Subscribe */
-.subscribe-section{
-    /* background-color: #00997f; */
-    background-image: url("assets/images/subscribe.jpg");
-    height: 300px;
-    width: 100%;
-    /* background-position-x: center;
-  background-position-y: 112.866px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-origin: initial;
-  background-clip: initial;
-   background-color: initial; */
+.subscribe{
+    background-image: url('assets/images/subscribe.jpg'); /* Ensure this path is correct */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    height: 60vh;
+    padding: 20px;
+    color: white;
 }
-
 
 
 /* footer */
-body {
-    font-family: 'Arial', sans-serif;
-}
+
 
 .footer {
     background-color: #0a0c15;
