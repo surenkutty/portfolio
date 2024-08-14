@@ -351,6 +351,7 @@ nav{
 }
 
 .home-icon {
+
     width: 100px;
     height: 100px;
 }
@@ -406,6 +407,7 @@ nav{
     line-height: 1.5;
     margin-bottom: 1rem;
     margin: 10px 0;
+    color: #d6dfe4;
    
 }
 
@@ -467,16 +469,7 @@ nav{
     
 }
 
-.icon-circle {
-    width: 40px;
-    height: 40px;
-    background-color: #777;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
+
 
 .icon-circle i {
     font-size: 20px;
@@ -544,17 +537,16 @@ nav{
     height: 200px;
     padding: 10px;
     width: 200px;
-    background-color: white;
+    background-color:#00bfa6;
     text-align: center;
 }
-i{ color: #09101A;
+/* i{ color: #09101A;
     align-items: center;
     height: 40px;
     width: auto;
-}
-.icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+} */
+.design-icon i{
+    font-size: 30px;
 }
 
 .contact-form form {
@@ -603,6 +595,11 @@ i{ color: #09101A;
 .contact-form button:hover {
     background-color: #00997f;
 }
+.Design-page{
+    background-color: #09101A;
+    padding-bottom: 100px;
+    /* padding-top: 50px; */
+}
 .design-container{
     margin-top: 200px;
     margin-right: 100px;
@@ -610,9 +607,14 @@ i{ color: #09101A;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content:space-around;
+    /* background-color: #09101A; */
     /* width: 100%; */
     
 
+}
+.design-p{
+    color: #d6dfe4;
+    font-size: 16px;
 }
 
 /* education&skill */
@@ -631,6 +633,12 @@ i{ color: #09101A;
     margin-bottom: 20px;
 }
 
+.edu-p{
+    color: whitesmoke;
+}
+.edu-h{
+    color: #00bfa6;
+}
 .education-skill h2 {
     font-size: 2rem;
     margin-bottom: 40px;
@@ -669,12 +677,14 @@ i{ color: #09101A;
 }
 
 .grid-item h3 {
-    color: azure;
+    
+    color:#4caf50;
     font-size:30px;
     margin: 20px 0 10px;
 }
 
 .grid-item p {
+    color: azure;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -755,6 +765,13 @@ i{ color: #09101A;
         background: #131313;
 
 }
+#user-icon{
+    text-align: center;
+    align-items: center;
+    color: #4caf50;
+    font-size: 70px;
+}
+
 .subscribe-form button{
     position:relative;
     top:3px;
@@ -817,6 +834,7 @@ i{ color: #09101A;
 }
 
 .footer-column h4 {
+    color:#4caf50;
     font-size: 20px;
     margin-bottom: 10px;
 }

@@ -1,3 +1,43 @@
+// Function to animate the counter
+function animateCounter(element, end, duration) {
+  let startTimestamp = null;
+  const start = 0;
+  
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    element.innerText = Math.floor(progress * (end - start) + start);
+    
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    } else {
+      element.innerText = end; // Ensure the final value is set
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+// Intersection Observer to trigger animation when section is in view
+const counters = document.querySelectorAll('.scroll-count');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute('data-target'));
+      animateCounter(entry.target, target, 2000); // Count from 0 to target
+      observer.unobserve(entry.target); // Stop observing after animation
+    }
+  });
+}, { threshold: 0.5 });
+
+// Add data-target attribute to your HTML
+counters.forEach(counter => {
+  observer.observe(counter); // Start observing
+});
+
+
+
+
 window.addEventListener('load', function() {
   const progressBars = document.querySelectorAll('.progress');
   progressBars.forEach(progressBar => {
