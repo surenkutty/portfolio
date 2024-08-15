@@ -1,3 +1,17 @@
+function myMenuFunction(){
+  var menuBtn = document.getElementById("myNavMenu");
+  if(menuBtn.className === "nav-menu"){
+    menuBtn.className += " responsive";
+  } else {
+    menuBtn.className = "nav-menu";
+  }
+}
+
+
+
+
+
+
 // Function to animate the counter
 function animateCounter(element, end, duration) {
   let startTimestamp = null;
@@ -50,28 +64,21 @@ window.addEventListener('load', function() {
 });
 
 
-const createOdometer=(el,value)=>{
-  const odometer=new Odometer({
-    el:el,
-    value:0,
-    });
-    odometer.update(value)
-}
-const counter=document.querySelector(".scroll-count");
-createOdometer(counter,100)
+// const createOdometer=(el,value)=>{
+//   const odometer=new Odometer({
+//     el:el,
+//     value:0,
+//     });
+//     odometer.update(value)
+// }
+// const counter=document.querySelector(".scroll-count");
+// createOdometer(counter,100)
 
 
 
 
 
-function myMenuFunction(){
-    var menuBtn = document.getElementById("myNavMenu");
-    if(menuBtn.className === "nav-menu"){
-      menuBtn.className += " responsive";
-    } else {
-      menuBtn.className = "nav-menu";
-    }
-  }
+
 
   window.onscroll = function() {headerShadow()};
   function headerShadow() {
