@@ -660,6 +660,7 @@ nav{
     color: #00bfa6;
 }
 .education-skill h2 {
+    color: azure;
     font-size: 2rem;
     margin-bottom: 40px;
 }
@@ -744,6 +745,103 @@ nav{
     width: 0%;
     transition: width 2s ease;
 }
+
+/* project */
+
+.pro-title{
+    text-align: center;
+    align-items: center;
+    color: #00bfa6;
+}
+.project-container {
+    padding: 50px 0;
+}
+
+.pro-wrapper {
+    padding: 10px 10%;
+}
+
+.pro-card-area {
+    display: grid;
+    margin-top: 50px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pro-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+   
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pro-card:hover {
+    transform: scale(1.05);
+}
+
+.pro-card img {
+    height: 300px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.pro-overley {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    height:0;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
+    /* background-color: #00997f; */
+    border-radius: 10px;
+    background: linear-gradient(transparent, #3689af 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    transition: height 0.5s;
+}
+
+.pro-overley h3 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.pro-overley p {
+
+    color: #ddd;
+}
+
+.pro-overley a {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.pro-card:hover img {
+    transform: scale(1.2);
+}
+
+.pro-card:hover .pro-overley {
+    height: 100%;
+}
+
 
 /* Subscribe */
 .subscribe{
@@ -1365,3 +1463,36 @@ nav{
 
 }
     
+@media screen and (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-column {
+        flex: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+}
