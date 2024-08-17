@@ -95,7 +95,7 @@ window.addEventListener('load', function() {
   }
 
   var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Fullstack Developer","AppDeveloper"],
+    strings : ["Designer","Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
