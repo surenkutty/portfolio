@@ -7,8 +7,51 @@ function myMenuFunction(){
   }
 }
 
+// Email
+function sendMail(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
 
+  var params = {
+    from_name: document.getElementById("fullname").value,
+    email_id: document.getElementById("email_id").value,
+    phone_no: document.getElementById("phone_no").value,
+    message: document.getElementById("message").value,
+  };
 
+  const serviceID = "service_88jyied";
+  const templateID = "template_ygmhy5w";
+
+  emailjs.send(serviceID, templateID, params)
+  .then(function(res) {
+      showMessage("Message sent successfully!", "success");
+  })
+  .catch(function(err) {
+      showMessage("Failed to send message. Please try again.", "error");
+  });
+}
+
+function showMessage(message, type) {
+  var messageContainer = document.getElementById("message-container");
+  var messageBox = document.getElementById("message-box");
+  var messageContent = document.getElementById("message-content");
+
+  messageContent.textContent = message;
+
+  if (type === "success") {
+      messageBox.classList.add("success");
+      messageBox.classList.remove("error");
+  } else {
+      messageBox.classList.add("error");
+      messageBox.classList.remove("success");
+  }
+
+  messageContainer.style.display = "flex"; // Show the container
+}
+
+function closeMessage() {
+  var messageContainer = document.getElementById("message-container");
+  messageContainer.style.display = "none"; // Hide the container
+}
 
 
 

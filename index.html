@@ -77,11 +77,12 @@
                         <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
-                        
-                        <div class="icon"> 
-                            <i class="uil uil-instagram" >
-                               
-                            </i></div>
+
+                        <div class="icon">
+                            <i class="uil uil-instagram">
+
+                            </i>
+                        </div>
                         <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
                         <div class="icon"><i class="uil uil-dribbble"></i></div>
                         <div class="icon"><i class="uil uil-github-alt"></i></div>
@@ -213,20 +214,27 @@
                 <div class="contact-form" id="contact">
                     <h2 class="form-h2">GET TOUCH ME?</h2>
                     <p class="form-p">For your ease and convenience, our design team is ready to assist you...</p>
-                    <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number" required>
-                        <textarea placeholder="Message" required></textarea>
+                    <form id="contactForm" onsubmit="sendMail(event)">
+                        <input type="text" id="fullname" placeholder="Your Name" required>
+                        <input type="email" id="email_id" placeholder="Your Email" required>
+                        <input type="tel" id="phone_no" placeholder="Phone Number" required>
+                        <textarea id="message" placeholder="Message" required></textarea>
                         <button type="submit">Submit Now</button>
                     </form>
+                </div>
+            </div>
+
+            <div id="message-container" class="message-container">
+                <div id="message-box" class="message-box">
+                    <span id="message-content"></span>
+                    <button onclick="closeMessage()">Close</button>
                 </div>
             </div>
         </section>
         <!-- Skill&Education -->
         <section class="education-skill">
             <h1>Education & Skill</h1>
-            <h2 class="edu-h2" >Showcasing your talent, amplifying your impact</h2>
+            <h2 class="edu-h2">Showcasing your talent, amplifying your impact</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <div class="year">2021- 2025</div>
@@ -280,6 +288,7 @@
                     <div class="progress-bar">
                         <h3>Python</h3>
                         <div class="progress" style="width: 85%;"></div>
+
                     </div>
                 </div>
                 <div class="skill">
@@ -313,7 +322,7 @@
                                 <a href="#">Click Me</a>
                             </div>
                         </div>
-        
+
                         <div class="pro-card">
                             <img src="./assets/images/urlvideodownloader.png" alt="URL Downloader">
                             <div class="pro-overley">
@@ -322,7 +331,7 @@
                                 <a href="#">Click Me</a>
                             </div>
                         </div>
-        
+
                         <div class="pro-card">
                             <img src="./assets/images/ecom.png" alt="Demo App">
                             <div class="pro-overley">
@@ -335,7 +344,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- subscribpage -->
         <section class="subscribe" id="subscribe">
             <div class="subscribe-overley">
@@ -392,6 +401,15 @@
 
 
     </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "2OzvwsGsE74I54H2F",
+            });
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/a964ce8b71.js" crossorigin="anonymous"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
