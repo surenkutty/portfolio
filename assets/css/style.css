@@ -674,8 +674,11 @@ nav{
    margin: 100px;
     /* margin-left: 100px; */
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content:space-between;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px; */
+    
+    /* justify-content:space-between; */
     /* background-color: #09101A; */
     /* width: 100%; */
     
