@@ -5,6 +5,7 @@ body{
     background-color:rgb(20, 17, 41);
 }
 *{
+    text-decoration: none;
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
