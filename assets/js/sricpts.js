@@ -86,8 +86,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.5 });
-
-// Add data-target attribute to your HTML
 counters.forEach(counter => {
   observer.observe(counter); // Start observing
 });
@@ -152,6 +150,7 @@ window.addEventListener('load', function() {
   reset: true     
 })
 /* -- HOME -- */
+// sr.reveal('.skills-section',{delay:200})
 sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100})
 sr.reveal('.featured-text-info',{delay: 200})
@@ -166,11 +165,13 @@ const srleft = ScrollReveal({
   
   reset: false    
 })
-
+srleft.reveal('.skills-section',{})
+srleft.reveal('.grid-item',{delay:400})
 srleft.reveal('.about-image-container',{delay:400})
 srleft.reveal('.s2-title',{})
 srleft.reveal('.card',{delay:100})
 srleft.reveal('.progress',{delay:100})
+srleft.reveal('.pro-card',{delay:200})
 const srright = ScrollReveal({
   origin: 'right',
   distance: '80px',
@@ -186,4 +187,4 @@ const srbottom = ScrollReveal({
   duration: 2000,
   reset: false    
 })
-srbottom.reveal('.contact-form',{delay:400})
+srbottom.reveal('.contact-form',{delay:200})
