@@ -145,12 +145,12 @@ window.addEventListener('load', function() {
 
  const sr = ScrollReveal({
   origin: 'top',
-  distance: '80px',
+  distance: '50px',
   duration: 2000,
   reset: true     
 })
 /* -- HOME -- */
-// sr.reveal('.skills-section',{delay:200})
+sr.reveal('.skills-section',{delay:200})
 sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100})
 sr.reveal('.featured-text-info',{delay: 200})
@@ -179,8 +179,16 @@ const srright = ScrollReveal({
   easing:'ease-out',
   reset: false    
 })
-srright.reveal('.info',{})
+
 srright.reveal('.about-content',{delay:200})
+const srright01 = ScrollReveal({
+  origin: 'right',
+  distance: '30px',
+  duration: 2000,
+  easing:'ease-out',
+  reset: false    
+})
+srright01.reveal('.info',{})
 const srbottom = ScrollReveal({
   origin: 'bottom',
   distance: '80px',
