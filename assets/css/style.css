@@ -1512,6 +1512,12 @@ nav{
     padding: 10px;
     width: 300px;
    }
+   .subscribe-form button{
+    position:relative;
+    top:5px;
+    right: 0;
+    cursor: pointer;
+}
 
 }
     
