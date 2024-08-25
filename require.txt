@@ -6,6 +6,9 @@ background-image: url(https://zyan.vercel.app/images/bg/subscribe.jpg); */
     /* background-attachment: fixed; */
     /* background-origin: initial; */
     /* background-clip: initial; */
-    /* background-color: initial;
+    /* background-color: initial
 
-    
+// more features 
+1.contact email
+2.popup model box
+3.reponsive design for mobile view
