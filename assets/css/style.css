@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
@@ -48,6 +47,39 @@ html{
 .btn:hover{
     background: black;
     color: white;
+}
+.btn-animated {
+    background: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(85,230,165,0.08);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-animated:hover, .btn-animated:focus {
+    background: #55E6A5;
+    color: #09101A;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 24px rgba(85,230,165,0.18);
+}
+
+.btn-animated i {
+    transition: transform 0.3s;
+}
+
+.btn-animated:hover i {
+    transform: translateX(4px) scale(1.2);
 }
 i{
     font-size: 16px;
@@ -211,7 +243,7 @@ nav{
     
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,10 +253,26 @@ nav{
     background-color: #f1f1f1;
     box-shadow: 0px 2px 5px 0px rgb(50, 150, 50);
     cursor: pointer;
+    overflow: hidden;        /* Prevents fallback text like "sp" */
+    font-size: 24px;         /* Ensures icon size is consistent */
+    transition: transform 0.3s, background 0.3s;
 }
-.icon:hover{
-    color:blueviolet;
+
+.icon i {
+    font-size: 24px;
+    color: #232323;
+    transition: color 0.3s;
 }
+
+.icon:hover {
+    transform: scale(1.15) rotate(-8deg);
+    background: #55E6A5;
+}
+
+.icon:hover i {
+    color: #09101A;
+}
+
 /* ----- FEATURED IMAGE BOX ----- */
 
 .featured-image{
